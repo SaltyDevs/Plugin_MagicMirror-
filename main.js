@@ -29,8 +29,8 @@ var config = {
   },
   {
    module: "calendar",
-   header: "Holidays",
-   position: "top_left",
+   header: "US Holidays",
+   position: "top_right",
    config: {
     calendars: [
      {
@@ -40,12 +40,12 @@ var config = {
    }
   },
   {
- /*  module: "compliments",
-   position: "lower_third"*/
+   module: "compliments",
+   position: "lower_third"
   },
   {
    module: "currentweather",
-   position: "top_left",
+   position: "top_right",
    config: {
     location: "Kiev",
     locationID: "703448",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
@@ -54,7 +54,7 @@ var config = {
   },
   {
    module: "weatherforecast",
-   position: "top_left",
+   position: "top_right",
    header: "Weather Forecast",
    config: {
     location: "Kiev",
@@ -72,7 +72,7 @@ var config = {
       url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
      }
     ],
-    showSourceTitle: false,
+    showSourceTitle: true,
     showPublishDate: true,
     broadcastNewsFeeds: true,
     broadcastNewsUpdates: true
